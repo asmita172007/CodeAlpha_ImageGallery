@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery - CodeAlpha Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>CodeAlpha Frontend Development Task</p>
+    </header>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-container">
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80', 'Tropical Beach')">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=400&q=80" alt="Beach">
+            <div class="overlay"><span>Tropical Beach</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=80', 'Mountain Peaks')">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=400&q=80" alt="Mountain">
+            <div class="overlay"><span>Mountain Peaks</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1000&q=80', 'Green Forest')">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=400&q=80" alt="Forest">
+            <div class="overlay"><span>Green Forest</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80', 'Scenic Valley')">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Valley">
+            <div class="overlay"><span>Scenic Valley</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1000&q=80', 'Misty Woods')">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=400&q=80" alt="Woods">
+            <div class="overlay"><span>Misty Woods</span></div>
+        </div>
+        <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1000&q=80', 'Starry Night Sky')">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80" alt="Night Sky">
+            <div class="overlay"><span>Starry Night Sky</span></div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for Full View -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img id="lightbox-img" src="" alt="Full View">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
